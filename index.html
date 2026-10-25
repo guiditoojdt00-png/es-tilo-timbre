@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Timbre digital de Es-Tilo Tattoos. Avisá cuando llegues a tu turno.">
+  <title>Es-Tilo Tattoos | Timbre digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: dark; --bg:#101010; --panel:#171717; --gold:#c6a45c; --gold-light:#dfc17e; --muted:#aaa49a; }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; min-height:100svh; display:grid; place-items:center; padding:24px;
+      background:radial-gradient(ellipse at 50% 25%, #24211a 0%, #121212 42%, #090909 100%);
+      color:#f3f0e9; font-family:Arial, sans-serif;
+    }
+    .card {
+      width:min(100%, 430px); padding:38px 26px 28px; text-align:center;
+      border:1px solid rgba(198,164,92,.35); border-radius:20px;
+      background:linear-gradient(160deg, rgba(255,255,255,.035), rgba(255,255,255,.008)), #111;
+      box-shadow:0 22px 70px rgba(0,0,0,.45);
+      position:relative; overflow:hidden;
+    }
+    .card:before { content:""; position:absolute; inset:8px; border:1px solid rgba(198,164,92,.10); border-radius:14px; pointer-events:none; }
+    .eyebrow { color:var(--gold); text-transform:uppercase; letter-spacing:.24em; font-size:10px; margin:0 0 18px; }
+    h1 { margin:0; font-family:"Cormorant Garamond", Georgia, serif; font-size:clamp(40px, 10vw, 54px); line-height:.98; font-weight:600; font-style:italic; color:var(--gold-light); letter-spacing:-.035em; }
+    .rule { height:1px; width:54px; margin:23px auto 25px; background:linear-gradient(90deg, transparent, var(--gold), transparent); }
+    .bell { width:54px; height:54px; margin:0 auto 17px; display:grid; place-items:center; border:1px solid rgba(198,164,92,.35); border-radius:50%; color:var(--gold-light); }
+    .bell svg { width:25px; height:25px; }
+    h2 { margin:0 0 9px; font-family:"Oswald", sans-serif; text-transform:uppercase; font-size:22px; font-weight:500; letter-spacing:.08em; }
+    .copy { margin:0 auto; max-width:290px; color:#bdb8ae; font-size:14px; line-height:1.65; }
+    .button {
+      display:flex; align-items:center; justify-content:center; gap:10px; width:100%; min-height:56px;
+      margin:27px 0 14px; padding:15px 18px; border-radius:8px; background:var(--gold);
+      color:#111; text-decoration:none; font-family:"Oswald", sans-serif; font-size:15px; font-weight:600;
+      letter-spacing:.12em; transition:transform .15s ease, background .15s ease;
+    }
+    .button:hover { background:var(--gold-light); transform:translateY(-1px); }
+    .button:focus-visible { outline:3px solid #fff; outline-offset:4px; }
+    .button svg { width:19px; height:19px; }
+    .note { color:#8d887f; font-size:11px; line-height:1.5; margin:0 auto; max-width:290px; }
+    .footer { margin-top:28px; color:#7e786e; font-size:10px; text-transform:uppercase; letter-spacing:.18em; }
+    @media (max-width:360px) { .card { padding:32px 20px 24px; } }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <p class="eyebrow">Estudio privado · Mar del Plata</p>
+    <h1>Es-Tilo Tattoos</h1>
+    <div class="rule" aria-hidden="true"></div>
+    <div class="bell" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/>
+        <path d="M10 21h4"/>
+        <path d="M21 4l-2 2M3 4l2 2"/>
+      </svg>
+    </div>
+    <h2>¿Ya llegaste?</h2>
+    <p class="copy">Cuando estés afuera del estudio, tocá el botón para avisarme que llegaste a tu turno.</p>
+    <a class="button" href="https://wa.me/5492235011611?text=%F0%9F%96%A4%20ES-TILO%20TATTOOS%0A%C2%A1Hola!%20Ya%20estoy%20afuera%20del%20estudio.%20Llegu%C3%A9%20a%20mi%20turno." aria-label="Avisar por WhatsApp que ya llegaste">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.82 11.82 0 0 0 12.1 0C5.55 0 .22 5.33.22 11.88c0 2.09.55 4.13 1.59 5.93L.12 24l6.34-1.66a11.9 11.9 0 0 0 5.64 1.43h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.17-1.24-6.15-3.47-8.41ZM12.11 21.75h-.01a9.86 9.86 0 0 1-5.02-1.37l-.36-.21-3.76.99 1-3.66-.24-.38a9.84 9.84 0 0 1-1.51-5.24c0-5.45 4.44-9.89 9.9-9.89a9.82 9.82 0 0 1 7 2.9 9.82 9.82 0 0 1 2.9 7c0 5.45-4.44 9.89-9.9 9.89Zm5.43-7.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+      YA ESTOY AFUERA
+    </a>
+    <p class="note">Se abrirá WhatsApp con el mensaje preparado. Acordate de tocar «Enviar».</p>
+    <div class="footer">Tu turno · Tu espacio · Tu historia</div>
+  </main>
+</body>
+</html>
